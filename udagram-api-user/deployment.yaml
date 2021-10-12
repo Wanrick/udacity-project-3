@@ -16,7 +16,13 @@ spec:
     spec:
       containers:
       - name: udagram-api-user
-        image: wanrick/udagram-api-user:v1
+        image: wanrick/udagram-api-user:v6
+        resources:
+          limits:
+            memory: "200Mi"
+            cpu: "1"
+          requests:
+            memory: "100Mi"
         ports:
         - containerPort: 8080
         env:

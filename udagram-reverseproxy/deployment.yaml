@@ -16,6 +16,10 @@ spec:
     spec:
       containers:
       - name: udagram-reverseproxy
-        image: wanrick/udagram-reverseproxy:v5
-        ports:
-        - containerPort: 8080
+        image: wanrick/udagram-reverseproxy:v6
+        resources:
+          limits:
+            memory: "200Mi"
+            cpu: "1"
+          requests:
+            memory: "100Mi"
