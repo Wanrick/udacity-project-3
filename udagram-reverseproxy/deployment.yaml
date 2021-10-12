@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: udagram-reverseproxy
-        image: wanrick/udagram-reverseproxy:v2
+        image: wanrick/udagram-reverseproxy:v5
         ports:
         - containerPort: 8080
